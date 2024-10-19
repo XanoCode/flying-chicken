@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+footer h4 {
+    font-family: monospace;
+    font-size: 15px;
+}

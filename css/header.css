@@ -1,0 +1,37 @@
+header {
+    background-color: rgb(20, 20, 20);;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Logo */
+header .logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* menu de navigation */
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+   color: rgb(253, 24, 74);
+}
