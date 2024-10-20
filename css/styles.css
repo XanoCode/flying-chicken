@@ -22,7 +22,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5vw;
+    gap: 2vw;
 }
 
 main .logo {
@@ -47,7 +47,8 @@ main .logo {
     margin-top: 15px;
     overflow: hidden;
     transition: 0.5s all ease;
-    z-index: 1; /* Assure-toi que c'est en haut */
+    z-index: 1; /* Pour voire le texte */
+    cursor: help;
 }
 
 .btn::before {
