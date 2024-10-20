@@ -48,7 +48,6 @@ main .logo {
     overflow: hidden;
     transition: 0.5s all ease;
     z-index: 1; /* Pour voire le texte */
-    cursor: help;
 }
 
 .btn::before {
@@ -69,6 +68,6 @@ main .logo {
 }
 
 .btn:hover::before {
-    height: 310%; /* Garde cette partie */
+    height: 350%; /* Garde cette partie */
     transform: translate(-50%, -50%) rotate(25deg) scale(1.1); /* Ajoute l'effet d'agrandissement */
 }
