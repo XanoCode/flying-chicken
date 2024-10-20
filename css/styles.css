@@ -22,7 +22,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 5vw;
 }
 
 main .logo {
@@ -36,15 +36,38 @@ main .logo {
 }
 
 .btn {
-    padding: 10px;
+    position: relative;
+    padding: 15px;
     border-radius: 5px;
-    background-color: rgb(248, 39, 39);
+    background-color: rgb(10, 10, 10);
+    border: 1px solid rgb(248, 39, 39);
     color: white;
     text-decoration: none;
     text-align: center;
     margin-top: 15px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    z-index: 1; /* Assure-toi que c'est en haut */
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background: rgb(248, 39, 39);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    z-index: -1; /* Doit être en arrière-plan */
+    transition: 0.5s all ease;
+    height: 0%;
+    width: 120%;
 }
 
 .btn:hover {
-    padding: 15px;
+    color: black; /* Change la couleur du texte au survol */
+}
+
+.btn:hover::before {
+    height: 310%; /* Garde cette partie */
+    transform: translate(-50%, -50%) rotate(25deg) scale(1.1); /* Ajoute l'effet d'agrandissement */
 }
